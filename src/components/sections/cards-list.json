@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_c_l",
+  "info": {
+    "displayName": "CardsList",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    },
+    "cardsListItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.cards-list-item"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_l_l",
+  "info": {
+    "displayName": "Link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "same_tab",
+        "new_tab"
+      ],
+      "default": "same_tab",
+      "required": true
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::link.link"
+    }
+  }
+}

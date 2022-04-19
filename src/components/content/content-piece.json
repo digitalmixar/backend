@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_c_c_p",
+  "info": {
+    "displayName": "ContentPieceComp",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["variant_1"],
+      "default": "variant_1"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "videos", "audios"]
+    },
+    "decorativeMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "CTAs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button"
+    }
+  }
+}

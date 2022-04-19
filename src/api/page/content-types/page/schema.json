@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "shortName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "metadata": {
+      "displayName": "Metadata",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "meta.metadata",
+      "required": true
+    },
+    "contentSections": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "sections.cards-list",
+        "sections.general-purpose-section"
+      ],
+      "required": true,
+      "min": 1
+    },
+    "status": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "published",
+        "draft"
+      ],
+      "default": "draft",
+      "required": true
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "regex": "^$|^[a-zA-Z/-]+$",
+      "required": false,
+      "unique": false
+    }
+  }
+}

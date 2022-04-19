@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_g_p_s",
+  "info": {
+    "displayName": "GeneralPurposeSection",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sharedContentPiece": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content-piece.content-piece"
+    },
+    "content": {
+      "type": "component",
+      "component": "content.content-piece",
+      "repeatable": false
+    }
+  }
+}

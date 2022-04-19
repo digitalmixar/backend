@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_l_b",
+  "info": {
+    "displayName": "ButtonLink",
+    "icon": "hand-point-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary"
+      ],
+      "default": "primary",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "same_tab",
+        "new_tab"
+      ]
+    },
+    "url": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::link.link"
+    }
+  }
+}
