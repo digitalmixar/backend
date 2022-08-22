@@ -13,11 +13,6 @@
     "text": {
       "type": "richtext"
     },
-    "variant": {
-      "type": "enumeration",
-      "enum": ["variant_1"],
-      "default": "variant_1"
-    },
     "subHeading": {
       "type": "string"
     },
@@ -25,13 +20,19 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
     },
     "decorativeMedia": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "CTAs": {
       "type": "component",

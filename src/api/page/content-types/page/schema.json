@@ -46,7 +46,8 @@
       "type": "dynamiczone",
       "components": [
         "sections.cards-list",
-        "sections.general-purpose-section"
+        "sections.general-purpose-section",
+        "sections.main-hero"
       ],
       "required": true,
       "min": 1
